@@ -1,13 +1,14 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { Component } from "react";
+import Jumbotron from "./components/jumbotron/jumbotron";
 
+class App extends Component {
 
-function App() {
-  return (
-    <Wrapper>
-    {/* Site components go here */}
-    </Wrapper>
-  );
+  render() {
+    return (
+      <Jumbotron/>
+   
+    );
+  }
 }
 
 export default App;
