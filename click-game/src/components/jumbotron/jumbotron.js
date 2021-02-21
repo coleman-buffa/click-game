@@ -1,5 +1,5 @@
 import React from "react";
-import "./jumbotron.css";
+import "./style.css";
 
 function Jumbotron() {
   return <div className="jumbotron mb-0 mt-5 bg-secondary text-light">

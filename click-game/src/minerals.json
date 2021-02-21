@@ -1,63 +1,63 @@
 [
   {
     "id": 1,
-    "name": "",
-    "image": ""
+    "name": "Quartz",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 2,
-    "name": "",
-    "image": ""
+    "name": "Calcite",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 3,
-    "name": "",
-    "image": ""
+    "name": "Pyrite",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 4,
-    "name": "",
-    "image": ""
+    "name": "Cinnebar",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 5,
-    "name": "",
-    "image": ""
+    "name": "Azurite",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 6,
-    "name": "",
-    "image": ""
+    "name": "Beryl",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 7,
-    "name": "",
-    "image": ""
+    "name": "Labradorite",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 8,
-    "name": "",
-    "image": ""
+    "name": "Corundum",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 9,
-    "name": "",
-    "image": ""
+    "name": "Halite",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 10,
-    "name": "",
-    "image": ""
+    "name": "Lawsonite",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 11,
-    "name": "",
-    "image": ""
+    "name": "Magnetite",
+    "image": "https://via.placeholder.com/150"
   },
   {
     "id": 12,
-    "name": "",
-    "image": ""
+    "name": "Rutile",
+    "image": "https://via.placeholder.com/150"
   }
 ]
   

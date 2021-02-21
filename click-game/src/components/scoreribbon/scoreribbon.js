@@ -1,5 +1,5 @@
 import React from "react";
-import "./scoreribbon.css";
+import "./style.css";
 
 function scoreRibbon() {
   return (
