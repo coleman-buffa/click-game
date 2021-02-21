@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Scorecard from "./components/scoreribbon/scoreribbon";
 import Jumbotron from "./components/jumbotron/jumbotron";
 import MineralCard from "./components/mineralcard/mineralcard";
+import Wrapper from "./components/wrapper/wrapper";
 
 import minerals from "./minerals.json";
 
@@ -12,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <Wrapper>
         {this.state.minerals.map(mineral => (
           <MineralCard
             id={mineral.id}
@@ -21,7 +22,7 @@ class App extends Component {
             image={mineral.image}
           />
         ))}
-      </div>
+      </Wrapper>
     );
   }
 }
