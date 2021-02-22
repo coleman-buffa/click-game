@@ -3,9 +3,10 @@ import "./style.css";
 
 function scoreRibbon() {
   return (
-    <div className="navbar sticky-top">
+    <nav className="navbar sticky-top">
+      <div className="container-fluid">
       <ul className="navbar-nav">
-        <li className="brand nav-bar-li">
+        <li>
         <a href="/">Mineral Mania</a>
         </li>
         <li className="nav-item nav-bar-li">
@@ -15,7 +16,9 @@ function scoreRibbon() {
           Score: 0 | Top Score: 0
         </li>     
       </ul>
-    </div>
+      </div>
+   
+    </nav>
   )
 }
 

@@ -2,62 +2,62 @@
   {
     "id": 1,
     "name": "Quartz",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Quartz%2C_Tibet.jpg/1280px-Quartz%2C_Tibet.jpg"
+    "image": "/assets/1280px-Quartz,_Tibet.jpg"
   },
   {
     "id": 2,
     "name": "Calcite",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Calcite-20188.jpg"
+    "image": "/assets/Calcite-20188.jpg"
   },
   {
     "id": 3,
     "name": "Pyrite",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pyrite_-_Huanzala_mine%2C_Huallanca%2C_Bolognesi%2C_Ancash%2C_Peru.jpg/1024px-Pyrite_-_Huanzala_mine%2C_Huallanca%2C_Bolognesi%2C_Ancash%2C_Peru.jpg"
+    "image": "/assets/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg"
   },
   {
     "id": 4,
     "name": "Cinnebar",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Cinnabar09.jpg"
+    "image": "/assets/Cinnabar09.jpg"
   },
   {
     "id": 5,
     "name": "Azurite",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Azurite%2C_Burra_Mine%2C_South_Australia.jpg"
+    "image": "/assets/Azurite,_Burra_Mine,_South_Australia.jpg"
   },
   {
     "id": 6,
     "name": "Beryl",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Beryl-209736.jpg"
+    "image": "/assets/Beryl-209736.jpg"
   },
   {
     "id": 7,
     "name": "Labradorite",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Labradorite_polie_3%28Madagascar%29.jpg/1280px-Labradorite_polie_3%28Madagascar%29.jpg"
+    "image": "/assets/1280px-Labradorite_polie_3(Madagascar).jpg"
   },
   {
     "id": 8,
     "name": "Corundum",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Ruby_cristal.jpg"
+    "image": "/assets/Ruby_cristal.jpg"
   },
   {
     "id": 9,
     "name": "Halite",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Halite-249324.jpg"
+    "image": "/assets/Halite-249324.jpg"
   },
   {
     "id": 10,
     "name": "Lawsonite",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Lawsonite-169898.jpg"
+    "image": "/assets/Lawsonite-169898.jpg"
   },
   {
     "id": 11,
     "name": "Magnetite",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Magnetite-118736.jpg"
+    "image": "/assets/Magnetite-118736.jpg"
   },
   {
     "id": 12,
     "name": "Rutile",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hematite-Rutile-57088.jpg"
+    "image": "/assets/Hematite-Rutile-57088.jpg"
   }
 ]
   
