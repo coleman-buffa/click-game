@@ -15,25 +15,19 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <Wrapper>
         <Scoreribbon />
-        <Jumbotron />
-        <Wrapper>
-          {this.state.minerals.map(mineral => (
-            <MineralCard
-              id={mineral.id}
-              key={mineral.id}
-              name={mineral.name}
-              image={mineral.image}
-            />
-          ))}
-        </Wrapper>
+        <Jumbotron />     
+        {this.state.minerals.map(mineral => (
+          <MineralCard
+            id={mineral.id}
+            key={mineral.id}
+            name={mineral.name}
+            image={mineral.image}
+          />
+        ))}
         <Footer />
-      </div >
-
-
-
-
+      </Wrapper>
     );
   }
 }
