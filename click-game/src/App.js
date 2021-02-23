@@ -5,7 +5,6 @@ import Jumbotron from "./components/jumbotron/jumbotron";
 import MineralCard from "./components/mineralcard/mineralcard";
 import Footer from "./components/footer/footer";
 
-
 import minerals from "./minerals.json";
 
 class App extends Component {
@@ -28,19 +27,23 @@ class App extends Component {
 
   selectCard = (id) => {
     if (this.state.selectedCards.indexOf(id) > -1) {
-      this.setState({ currentScore: 0 });
-      this.setState({ selectedCards: [] });
-      this.setState({ animate: "animate__shakeX"})
+      this.setState({
+        currentScore: 0,
+        selectedCards: [],
+        animate: "animate__shakeX"
+      });
       console.log("You lose!");
-      
+
     } else {
-      this.setState({ animate: ""});
-      this.setState({ currentScore: this.state.currentScore + 1 });
+      this.setState({
+        animate: "",
+        currentScore: this.state.currentScore + 1
+      });
       console.log(`Score: ${this.state.currentScore}`);
       this.state.selectedCards.push(id);
       console.log(this.state.selectedCards);
       if (this.state.currentScore >= this.state.maxScore) {
-        this.setState({ maxScore: this.state.currentScore + 1});
+        this.setState({ maxScore: this.state.currentScore + 1 });
       }
     }
     this.shuffleCards();
@@ -48,25 +51,26 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
+      <div className="container-fluid">
         <Scoreribbon
           currentScore={this.state.currentScore}
           maxScore={this.state.maxScore}
         />
         <Jumbotron />
-        {this.state.minerals.map(mineral => (
-          <MineralCard
-            shuffleCards={this.shuffleCards}
-            selectCard={this.selectCard}
-            id={mineral.id}
-            key={mineral.id}
-            name={mineral.name}
-            image={mineral.image}
-            animate={this.state.animate}
-          />
-        ))}
+        <Wrapper>
+          {this.state.minerals.map(mineral => (
+            <MineralCard
+              selectCard={this.selectCard}
+              id={mineral.id}
+              key={mineral.id}
+              name={mineral.name}
+              image={mineral.image}
+              animate={this.state.animate}
+            />
+          ))}
+        </Wrapper>
         <Footer />
-      </Wrapper>
+      </div>
     );
   }
 }

@@ -2,62 +2,77 @@
   {
     "id": 1,
     "name": "Quartz",
-    "image": "/assets/1280px-Quartz,_Tibet.jpg"
+    "image": "/assets/quartz.jpg"
   },
   {
     "id": 2,
     "name": "Calcite",
-    "image": "/assets/Calcite-20188.jpg"
+    "image": "/assets/calcite.jpg"
   },
   {
     "id": 3,
     "name": "Pyrite",
-    "image": "/assets/Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg"
+    "image": "/assets/pyrite.jpg"
   },
   {
     "id": 4,
     "name": "Cinnebar",
-    "image": "/assets/Cinnabar09.jpg"
+    "image": "/assets/cinnebar.jpg"
   },
   {
     "id": 5,
     "name": "Azurite",
-    "image": "/assets/Azurite,_Burra_Mine,_South_Australia.jpg"
+    "image": "/assets/azurite.jpg"
   },
   {
     "id": 6,
     "name": "Beryl",
-    "image": "/assets/Beryl-209736.jpg"
+    "image": "/assets/beryl.jpg"
   },
   {
     "id": 7,
     "name": "Labradorite",
-    "image": "/assets/1280px-Labradorite_polie_3(Madagascar).jpg"
+    "image": "/assets/labradorite.jpg"
   },
   {
     "id": 8,
     "name": "Corundum",
-    "image": "/assets/Ruby_cristal.jpg"
+    "image": "/assets/corundum.jpg"
   },
   {
     "id": 9,
     "name": "Halite",
-    "image": "/assets/Halite-249324.jpg"
+    "image": "/assets/halite.jpg"
   },
   {
     "id": 10,
     "name": "Lawsonite",
-    "image": "/assets/Lawsonite-169898.jpg"
+    "image": "/assets/lawsonite.jpg"
   },
   {
     "id": 11,
     "name": "Magnetite",
-    "image": "/assets/Magnetite-118736.jpg"
+    "image": "/assets/magnetite.jpg"
   },
   {
     "id": 12,
     "name": "Rutile",
-    "image": "/assets/Hematite-Rutile-57088.jpg"
+    "image": "/assets/rutile.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Albite",
+    "image": "/assets/albite.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Mica",
+    "image": "/assets/mica.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Rutile",
+    "image": "/assets/garnet.jpg"
   }
 ]
   
