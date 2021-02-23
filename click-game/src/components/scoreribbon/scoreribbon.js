@@ -1,21 +1,24 @@
 import React from "react";
 import "./style.css";
 
-function scoreRibbon() {
+function scoreRibbon(props) {
   return (
-    <div className="navbar sticky-top">
+    <nav className="navbar sticky-top">
+      <div className="container-fluid">
       <ul className="navbar-nav">
-        <li className="brand nav-bar-li">
+        <li>
         <a href="/">Mineral Mania</a>
         </li>
         <li className="nav-item nav-bar-li">
           Click an image to begin!
         </li>
         <li className="nav-item nav-bar-li">
-          Score: 0 | Top Score: 0
+          Score: {props.currentScore} | Top Score: {props.maxScore}
         </li>     
       </ul>
-    </div>
+      </div>
+   
+    </nav>
   )
 }
 
