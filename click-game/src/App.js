@@ -27,6 +27,8 @@ class App extends Component {
 
   selectCard = (id) => {
     if (this.state.selectedCards.indexOf(id) > -1) {
+      // Reset selectedCard to empty
+      // Reset currentScore to 0
       console.log("You lose!");
     } else {      
       this.setState({ currentScore: this.state.currentScore + 1 });
