@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function scoreRibbon() {
+function scoreRibbon(props) {
   return (
     <nav className="navbar sticky-top">
       <div className="container-fluid">
@@ -13,7 +13,7 @@ function scoreRibbon() {
           Click an image to begin!
         </li>
         <li className="nav-item nav-bar-li">
-          Score: 0 | Top Score: 0
+          Score: {props.currentScore} | Top Score: {props.maxScore}
         </li>     
       </ul>
       </div>

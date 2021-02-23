@@ -12,7 +12,7 @@ class App extends Component {
   state = {
     minerals: minerals,
     selectedCards: [],
-    currentScore: 0,
+    currentScore: 1,
     maxScore: 0
   };
 
@@ -22,26 +22,30 @@ class App extends Component {
 
   shuffleCards = () => {
     const minerals = this.state.minerals.sort(() => Math.random() - 0.5);
-    this.setState({minerals: minerals});
+    this.setState({ minerals: minerals });
   }
 
   selectCard = (id) => {
-    for (let i = 0; i < this.state.selectedCards.length; i++) {
-      if (id == this.state.selectedCards[i]) {
-      } else {
-        this.setState({ currentScore: this.state.currentScore + 1 });
-        console.log(`Score: ${this.state.currentScore}`);
-      }
+    if (this.state.selectedCards.indexOf(id) > -1) {
+      console.log("You lose!");
+    } else {      
+      this.setState({ currentScore: this.state.currentScore + 1 });
+      console.log(`Score: ${this.state.currentScore}`);
+      this.state.selectedCards.push(id);
+      console.log(this.state.selectedCards);
     }
-    this.state.selectedCards.push(id);
     this.shuffleCards();
   }
+
+
+
 
   render() {
     return (
       <Wrapper>
-        <Scoreribbon 
-
+        <Scoreribbon
+          currentScore={this.currentScore}
+          maxScore={this.maxScore}
         />
         <Jumbotron />
         {this.state.minerals.map(mineral => (
