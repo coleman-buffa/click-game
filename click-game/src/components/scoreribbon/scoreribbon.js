@@ -6,11 +6,11 @@ function scoreRibbon(props) {
     <nav className="navbar sticky-top">
       <div className="container-fluid">
       <ul className="navbar-nav">
-        <li>
+        <li className="brand">
         <a href="/">Mineral Mania</a>
         </li>
         <li className="nav-item nav-bar-li">
-          Click an image to begin!
+          {props.answerResult}
         </li>
         <li className="nav-item nav-bar-li">
           Score: {props.currentScore} | Top Score: {props.maxScore}

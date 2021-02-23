@@ -13,6 +13,7 @@ class App extends Component {
     selectedCards: [],
     currentScore: 0,
     maxScore: 0,
+    answerResult: "Click an image to begin",
     animate: ''
   };
 
@@ -26,22 +27,22 @@ class App extends Component {
   }
 
   selectCard = (id) => {
+    //Check for duplicate card selection -> end the game and reset
     if (this.state.selectedCards.indexOf(id) > -1) {
       this.setState({
         currentScore: 0,
         selectedCards: [],
-        animate: "animate__shakeX"
+        animate: "animate__shakeX",
+        answerResult: "You lost"
       });
-      console.log("You lose!");
-
+      
     } else {
       this.setState({
         animate: "",
-        currentScore: this.state.currentScore + 1
+        currentScore: this.state.currentScore + 1,
+        answerResult: "Correct"
       });
-      console.log(`Score: ${this.state.currentScore}`);
       this.state.selectedCards.push(id);
-      console.log(this.state.selectedCards);
       if (this.state.currentScore >= this.state.maxScore) {
         this.setState({ maxScore: this.state.currentScore + 1 });
       }
@@ -53,6 +54,7 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <Scoreribbon
+          answerResult={this.state.answerResult}
           currentScore={this.state.currentScore}
           maxScore={this.state.maxScore}
         />

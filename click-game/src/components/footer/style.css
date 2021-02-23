@@ -1,5 +1,5 @@
 footer {
-  background: #E64A19;
+  background: #df603a;
   height: 100px;
   position: relative;
   color: #fff;
@@ -12,7 +12,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #5138a1;
+  background: #E64A19;
   padding: 8px;
   font-weight: 600;
 }

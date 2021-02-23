@@ -7,11 +7,10 @@
   display: block; 
   color: #fff;
   font-size: 20;
-  text-decoration: none;
   white-space: nowrap;
 }
 
-.navbar a {
+a {
   text-decoration: none;
 }
 
@@ -33,6 +32,5 @@ ul {
 
 li {
   display: inline-block;
-  text-decoration: none;
   text-align: center;
 }
