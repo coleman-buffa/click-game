@@ -46,7 +46,7 @@ React requires that each component reside within one parent element which is the
 
 ## Deployed Link
 
-[Deployed to GitHub Pages]()
+[Deployed to GitHub Pages](https://github.com/coleman-buffa/click-game/settings)
 
 ## Technologies 
 
