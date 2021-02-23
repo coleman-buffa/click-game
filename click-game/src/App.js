@@ -12,8 +12,9 @@ class App extends Component {
   state = {
     minerals: minerals,
     selectedCards: [],
-    currentScore: 1,
-    maxScore: 0
+    currentScore: 0,
+    maxScore: 0,
+    animate: ''
   };
 
   componentDidMount() {
@@ -27,27 +28,30 @@ class App extends Component {
 
   selectCard = (id) => {
     if (this.state.selectedCards.indexOf(id) > -1) {
-      // Reset selectedCard to empty
-      // Reset currentScore to 0
+      this.setState({ currentScore: 0 });
+      this.setState({ selectedCards: [] });
+      this.setState({ animate: "animate__shakeX"})
       console.log("You lose!");
-    } else {      
+      
+    } else {
+      this.setState({ animate: ""});
       this.setState({ currentScore: this.state.currentScore + 1 });
       console.log(`Score: ${this.state.currentScore}`);
       this.state.selectedCards.push(id);
       console.log(this.state.selectedCards);
+      if (this.state.currentScore >= this.state.maxScore) {
+        this.setState({ maxScore: this.state.currentScore + 1});
+      }
     }
     this.shuffleCards();
   }
-
-
-
 
   render() {
     return (
       <Wrapper>
         <Scoreribbon
-          currentScore={this.currentScore}
-          maxScore={this.maxScore}
+          currentScore={this.state.currentScore}
+          maxScore={this.state.maxScore}
         />
         <Jumbotron />
         {this.state.minerals.map(mineral => (
@@ -58,6 +62,7 @@ class App extends Component {
             key={mineral.id}
             name={mineral.name}
             image={mineral.image}
+            animate={this.state.animate}
           />
         ))}
         <Footer />
