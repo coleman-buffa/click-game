@@ -16,8 +16,7 @@ function scoreRibbon(props) {
           Score: {props.currentScore} | Top Score: {props.maxScore}
         </li>     
       </ul>
-      </div>
-   
+      </div>   
     </nav>
   )
 }

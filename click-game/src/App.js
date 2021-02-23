@@ -34,8 +34,7 @@ class App extends Component {
         selectedCards: [],
         animate: "animate__shakeX",
         answerResult: "You lost"
-      });
-      
+      });      
     } else {
       this.setState({
         animate: "",
@@ -52,7 +51,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div>
         <Scoreribbon
           answerResult={this.state.answerResult}
           currentScore={this.state.currentScore}
